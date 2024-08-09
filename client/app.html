@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<div class="overlay">
+<div class="gradient-overlay"></div> 
+<div class="header">
+    <h1 class="text">REAL ESTATE MARKET TRENDS</h1>
+    <p><marquee behavior="scroll" width='700px' delay='0.5'>(Leverage predictive analytics to estimate property values with precision, helping buyers and sellers navigate the real estate market with confidence.)</marquee></p>
+    
+</div>  
+<form class="form">
+	<h2>Area (Square Feet)</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="">
+	<h2>BHK</h2>
+	<div>
+  <select class="bhk" name="" id="uibhk" style="color: rgb(27, 26, 26); font-family: 'Roboto', sans-serif;">
+    <option value="" disabled="disabled" selected="selected" style="color: rgb(27, 26, 26);">Choose </option>
+        <option style="color: rgb(20, 20, 20);">1</option>
+        <option style="color: rgb(10, 10, 10);">2</option>
+        <option style="color: rgb(18, 18, 19);">3</option>
+        <option style="color: rgb(16, 16, 17);">4</option>
+        <option style="color: rgb(19, 19, 20);">5</option>
+  </select>
+</div>
+	<h2>Bath</h2>
+	<div>
+  <select class="bath" name="" id="uibath" style="color: rgb(27, 26, 26); font-family: 'Roboto', sans-serif;">
+    <option value="" disabled="disabled" selected="selected" style="color: rgb(27, 26, 26);">Choose </option>
+        <option style="color: rgb(30, 30, 32);">1</option>
+        <option style="color: rgb(16, 16, 17);">2</option>
+        <option style="color: rgb(18, 18, 19);">3</option>
+        <option style="color: rgb(25, 25, 26);">4</option>
+        <option style="color: rgb(24, 24, 26);">5</option>
+  </select>
+</div>
+		<h2>Location</h2>
+	<div>
+  <select class="location" name="choose location" id="uiLocations" style="color: rgb(27, 26, 26); font-family: 'Roboto', sans-serif;">
+    <option value="" disabled="disabled" selected="selected" style="color: rgb(27, 26, 26);">Choose a Location</option>
+		<option style="color: rgb(23, 23, 24);">Electronic City</option>
+        <option style="color: rgb(10, 10, 10);">Rajaji Nagar</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
